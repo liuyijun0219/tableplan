@@ -1,12 +1,14 @@
 package LSchedule.tableplanning.model;
 
+import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 public class Table {
 	
 	private Student student;
 	
-	private Map<String,Lession> lessionMap;
+	private Map<String,List<Lession>> lessionMap = new HashMap<String, List<Lession>>();
 
 	public Student getStudent() {
 		return student;
@@ -16,13 +18,11 @@ public class Table {
 		this.student = student;
 	}
 
-	public Map<String, Lession> getLessionMap() {
+	public Map<String,List<Lession>> getLessionMap() {
 		return lessionMap;
 	}
 
-	public void setLessionMap(Map<String, Lession> lessionMap) {
-		this.lessionMap = lessionMap;
-	}
+
 	
 	
 
